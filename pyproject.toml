@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "places-bot"
+version = "0.1.0"
+description = ""
+authors = ["Ryan McCarthy <ryan.mccarthy@salo.ai>"]
+readme = "README.md"
+packages = [{include = "places_bot"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+planet = "^1.5.2"
+geopandas = "^0.12.1"
+rasterio = "^1.3.4"
+shapely = "2.0.0"
+click = "^8.1.3"
+"Mastodon.py" = "^1.8.0"
+
+
+[tool.poetry.group.dev.dependencies]
+ipython = "^8.7.0"
+lxml = "^4.9.1"
+tqdm = "^4.64.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
